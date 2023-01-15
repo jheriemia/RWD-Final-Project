@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="/Image/logo.png">
+</head>
+<body>
+    <nav class="navbar">
+        <h1 class="name"> Jherie Mia S. Dela Cruz</h1>
+        <ul class="navtop">
+            <li class="home"><a href="index.html">Home</a></li>
+            <li><a href="about.html">About me</a></li>
+            <!-- <li ><a href="contacts.html">Contacts</a></li>-->
+        </ul>
+        <img src="./Image/menu.png" alt="" class="menu-btn">
+    </nav>
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navtop = document.querySelector('.navtop')
+
+        menuBtn.addEventListener('click',()=>{
+            navtop.classList.toggle('mobile-menu')
+        })
+      </script>
+
+    <section class="about">
+        <div class="about-content">
+            <h1>About Me</h1>
+            <p>Hi my name is Jherie Mia S. Dela Cruz, I'm From San Roque San Rafael Bulacan,
+             19 years old, I'm currently studying in <i>La Verdad Christian College</i>, 
+             taking the course of  Associate in Computer Technology.
+            </p>
+
+            <div class="family">
+                <ul>
+                    <li> <a href="/fam/family.html"> About my Family </a></li>
+                </ul>
+            </div>
+
+        </div>
+      </section>
+
+    <section class="info">
+        <p><i><strong>Blk 1 Lot 7 1st Avenue Larlin Village Apalit Pampanga</strong></i></p>
+        <p>Address</p>
+        <h3>You can visit my Social Media Accounts just click the Following links</h3>
+            <li><a href="https://www.facebook.com/mia.delacruz.3705/"><img src="/Image/facebook.jpg"> Facebook account</a></li>
+            <li><a href="https://www.instagram.com/jheriemia/"><img src="/Image/instagram.jpg"> Instagram account</a></li>
+       </section>
+</body>
+</html>

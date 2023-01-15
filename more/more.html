@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More</title>
+    <link rel="stylesheet" href="more.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="/Image/logo.png">
+</head>
+<body>
+    <nav class="navbar">
+        <h1 class="name"> Jherie Mia S. Dela Cruz</h1>
+        <ul class="navtop">
+            <li class="home"><a href="/index.html">Home</a></li>
+            <li><a href="/about.html">About me</a></li>
+            <!-- <li ><a href="contacts.html">Contacts</a></li>           -->
+        </ul>
+        <img src="/Image/menu.png" alt="" class="menu-btn">
+    </nav>
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navtop = document.querySelector('.navtop')
+
+        menuBtn.addEventListener('click',()=>{
+            navtop.classList.toggle('mobile-menu')
+        })
+      </script>
+
+    <section>
+      <div class="more">
+        <h1>More info about me</h1>
+      </div>
+        <div class="more-info">
+            <div class="info">
+            <img src="/Image/prof.jpg">
+            <p>Again I'm Jherie Mia S. Dela Cruz from San Rafael Bulacan</p>
+            <p>My Dream Job in this field is to become an Animator even i am not that good at drawing, but what i really want is to become a Licensed Veterinarian, and i hope someday god willing and in god's help i will achieve this 2 dreams of mine.</p>
+            <p> I have a lot of hobbies, like watching anime, reading manga and wanhwa, reading books, do calligraphy and sometimes i draw</p>
+            </div>
+      </div>
+    </section>
+
+
+
+</body>
+</html>

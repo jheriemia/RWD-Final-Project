@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(/Image/morebg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.ul{
+    list-style: none;
+}
+
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: rgb(17, 31, 19);
+}
+
+.navtop{
+    display: flex;
+    align-items: center;
+}
+
+.navtop li{
+    margin: 0 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 20px 20px  
+}
+
+.navtop li{
+    list-style: none;
+}
+
+.navbar ul li a:hover{
+    color: rgb(1, 15, 25);
+    transition: .4s;
+
+}
+
+.navbar h1{
+    font-size: 6vmin;
+    padding-top: 20px;
+}
+
+.menu-btn{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+section{
+    width: 80%;
+    margin: 50px auto;
+}
+
+.more{
+    text-align: center;
+    font-size: 4vmin;
+    color: black;
+    padding-top: 50px;
+}
+
+.info{
+    align-items: center;
+}
+
+.info img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500%;
+    height: 300px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.info p{
+    text-align: center;
+    font-size: 4vmin;
+}
+
+@media only screen and (max-width:850px){
+    .menu-btn{
+        display: block;
+    }
+
+    .navbar{
+        padding: 0;
+    }
+
+    .name{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+
+    .navtop{
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background-color: rgb(99, 158, 209);
+        margin-top: -900px;
+        transition: all o.5s ease;
+    }
+
+    .mobile-menu{
+        margin-top: 0px;
+        border-bottom-right-radius: 20% ;
+    }
+
+    .navtop li{
+        margin: 30px auto;
+    }
+}

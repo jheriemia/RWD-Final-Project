@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(125, 111, 111);
+}
+
+.home{
+    color: rgb(68, 102, 125);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* nav */
+
+.ul{
+    list-style: none;
+}
+
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: rgb(17, 31, 19);
+}
+
+.navtop{
+    display: flex;
+    align-items: center;
+}
+
+.navtop li{
+    margin: 0 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: rgb(37, 32, 32);
+    font-weight: bold;
+    text-transform: capitalize;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 20px 20px;
+    list-style: none;
+    text-decoration: none;
+}
+
+.navbar ul li a:hover{
+    color: rgb(1, 15, 25);
+    transition: .4s;
+
+}
+
+.navbar h1{
+    font-size: 6vmin;
+    padding-top: 20px;
+}
+
+
+
+/* slide */
+
+.slide h1{
+    padding-top: 120px;
+    color: aliceblue;
+    text-align: center;
+}
+
+.slide{
+    position: relative;
+    width: 60%;
+    overflow: hidden;
+}
+
+.image{
+    display: flex;
+    max-width:150%;
+}
+
+.image img{
+    height: 300px;
+    width: 100%;
+    transition: all 0.15s ease;
+}
+
+.image input{
+    display: none;
+}
+
+.dots{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+
+.dots label{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: solid white 2px;
+    cursor: pointer;
+    transform: all 0.15s ease;
+    margin: 5px;
+}
+
+.dots label:hover{
+    background-color: aliceblue;
+}
+
+#img2:checked ~ .m2{
+    margin-left: 0;
+}
+
+#img3:checked ~ .m3{
+    margin-left: -100%;
+}
+
+#img4:checked ~ .m4{
+    margin-left: -200%;
+}
+
+#img5:checked ~ .m5{
+    margin-left: -300%;
+}
+
+#img6:checked ~ .m6{
+    margin-left: -400%;
+}
+
+/* parents */
+
+.parents img{
+    width: 100%;
+    height: 300px;
+}
+
+.parents p{
+    color: aliceblue;
+}
+
+.menu-btn{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+}
